@@ -1,8 +1,9 @@
 import { Header } from "../../components/Header"
 import { Section } from '../../components/Section'
-import { Hero } from "./styles"
+import { Hero,Companies } from "./styles"
 import { Input } from "../../components/Input"
 import group_people from '../../assets/group-people.svg'
+import { company,company2,company3,company4,company5 } from '../../utils/companies'
 
 export function Home() {
     return (
@@ -22,6 +23,15 @@ export function Home() {
                     <div className="left-area"> 
                     </div>
                 </Hero>
+            </Section>
+            <Section>
+                <Companies>
+                    <img src={company} alt="logo google" />
+                    <img src={company2} alt="logo slack" />
+                    <img src={company3} alt="logo atlassian" />
+                    <img src={company4} alt="logo dropbox" />
+                    <img src={company5} alt="logo shopify" />
+                </Companies>
             </Section>
         </>
     )

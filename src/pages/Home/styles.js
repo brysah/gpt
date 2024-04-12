@@ -71,3 +71,23 @@ export const Hero = styled.div`
     }
   }
 `;
+
+export const Companies = styled.div`
+  max-width: 67rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12rem auto 12.6rem;
+  >img{
+    max-width: 7.1rem;
+  }
+  @media (max-width:1024px){
+    margin-bottom: 6rem;
+    flex-wrap: wrap;
+  }
+  @media (max-width:670px){
+    justify-content: center;
+    gap: 2rem;
+  }
+`
