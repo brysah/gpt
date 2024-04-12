@@ -14,6 +14,7 @@ export const Container = styled.header`
     }
     @media (max-width:1024px){
         justify-content: space-between;
+        margin-top: 2rem;
      }
 `
 
@@ -54,6 +55,7 @@ export const Button = styled.button`
      background-color: ${({ theme }) => theme.COLORS.BACKGROUND_BUTTON_MENU};
      width: 15.2rem;
      transition: all .3s;
+     border-radius: 5px;
      &:hover{
         background-color:  ${({ theme }) => theme.COLORS.TEXT_MENU}; 
         color: ${({ theme }) => theme.COLORS.BACKGROUND_BUTTON_MENU};
