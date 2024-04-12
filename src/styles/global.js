@@ -9,7 +9,7 @@ export default createGlobalStyle`
     outline: none;
     border: none;
     box-sizing: border-box;
-    font-family: 'Inter',sans-serif;
+    font-family: 'Manrope',sans-serif;
 }
 
 img{
@@ -19,6 +19,10 @@ img{
 
 html{
     font-size: 62.5%;
+}
+
+body{
+    background-color: ${ ( { theme } ) => theme.COLORS.BACKGROUND };
 }
 
 button{
