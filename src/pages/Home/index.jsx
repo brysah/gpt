@@ -1,10 +1,12 @@
 import { Header } from "../../components/Header"
 import { Section } from '../../components/Section'
-import { Hero, Companies, Info, Future, Feature,Cta } from "./styles"
+import { Hero, Companies, Info, Future, Feature, Cta, Blog } from "./styles"
 import { Input } from "../../components/Input"
 import group_people from '../../assets/group-people.svg'
 import feature from '../../assets/feature-image.png'
 import { company, company2, company3, company4, company5 } from '../../utils/companies'
+import { card, card2, card3, card4, card5 } from '../../utils/cards'
+
 import { Link } from 'react-router-dom'
 
 export function Home() {
@@ -142,6 +144,60 @@ export function Home() {
                     </div>
                     <button className="get">Get Started</button>
                 </Cta>
+            </Section>
+            <Section>
+                <Blog>
+                    <h3>
+                        A lot is happening,
+                        We are blogging about it.
+                    </h3>
+                    <div className="cards">
+                        <div className="large">
+                            <div className="card_item">
+                                <img src={card} alt="card image" className="card_image" />
+                                <div className="card_content">
+                                    <span>Sep 26, 2021</span>
+                                    <p>GPT-3 and Open  AI is the future. Let us exlore how it is?</p>
+                                    <Link> Read Full Article</Link>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="medium">
+                            <div className="card_item">
+                                <img src={card2} alt="card image" className="card_image" />
+                                <div className="card_content">
+                                    <span>Sep 26, 2021</span>
+                                    <p>GPT-3 and Open  AI is the future. Let us exlore how it is?</p>
+                                    <Link> Read Full Article</Link>
+                                </div>
+                            </div>
+                            <div className="card_item">
+                                <img src={card3} alt="card image" className="card_image" />
+                                <div className="card_content">
+                                    <span>Sep 26, 2021</span>
+                                    <p>GPT-3 and Open  AI is the future. Let us exlore how it is?</p>
+                                    <Link> Read Full Article</Link>
+                                </div>
+                            </div>
+                            <div className="card_item">
+                                <img src={card4} alt="card image" className="card_image" />
+                                <div className="card_content">
+                                    <span>Sep 26, 2021</span>
+                                    <p>GPT-3 and Open  AI is the future. Let us exlore how it is?</p>
+                                    <Link> Read Full Article</Link>
+                                </div>
+                            </div>
+                            <div className="card_item">
+                                <img src={card5} alt="card image" className="card_image" />
+                                <div className="card_content">
+                                    <span>Sep 26, 2021</span>
+                                    <p>GPT-3 and Open  AI is the future. Let us exlore how it is?</p>
+                                    <Link> Read Full Article</Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </Blog>
             </Section>
         </>
     )

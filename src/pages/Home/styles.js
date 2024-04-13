@@ -306,13 +306,13 @@ export const Feature = styled.div`
     max-width: 54.6rem;
     width: 100%;
   }
-  @media (max-width:1024px){
+  @media (max-width: 1024px) {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 2.5rem;
     margin-bottom: 8rem;
-    .left-area{
+    .left-area {
       max-width: 45rem;
     }
   }
@@ -354,16 +354,122 @@ export const Cta = styled.div`
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 3rem;
-    transition: all .3s;
+    transition: all 0.3s;
     &:hover {
-      background:#fff ;
+      background: #fff;
       color: #000;
     }
   }
-  @media (max-width:1024px){
+  @media (max-width: 1024px) {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 3rem;
+  }
+`;
+
+export const Blog = styled.div`
+  margin-bottom: 15rem;
+  h3 {
+    background: linear-gradient(90deg, #ae67fa 1.84%, #f49867 102.67%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 6.2rem;
+    font-weight: 800;
+    line-height: 7.5rem;
+    letter-spacing: -0.248rem;
+    max-width: 70rem;
+    width: 100%;
+    margin-bottom: 11.5rem;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    .large {
+      max-width: 41.7rem;
+      position: relative;
+      height: -webkit-fill-available;
+      background-color: ${({ theme }) => theme.COLORS.BACKGROUND_CARD};
+      .card_item {
+        .card_content {
+          a {
+            position: absolute;
+            bottom: 1.4rem;
+          }
+        }
+      }
+    }
+    .medium {
+      max-width: 70.2rem;
+      display: grid;
+      grid-template-columns: 32.7rem 32.7rem;
+      gap: 4.8rem;
+      .card_item {
+        .card_content {
+          padding: 0.7rem 2.5rem;
+          p {
+            font-size: 1.9rem;
+          }
+        }
+      }
+    }
+    .card_item {
+      width: 100%;
+      .card_content {
+        background-color: ${({ theme }) => theme.COLORS.BACKGROUND_CARD};
+        padding: 3.2rem 2.5rem;
+        span {
+          color: #fff;
+          font-size: 1.1649rem;
+          font-weight: 700;
+          line-height: 3.4947rem;
+        }
+        p {
+          color: #fff;
+          font-size: 2.511rem;
+          font-weight: 800;
+          line-height: 3.0287rem;
+        }
+        a {
+          color: #fff;
+          font-size: 1.1649rem;
+          font-weight: 700;
+          line-height: 3.4947rem;
+        }
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    h3 {
+      max-width: none;
+      text-align: center;
+    }
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 8rem;
+      .large {
+        height: auto;
+        .card_item {
+          .card_content {
+            height: 25rem;
+          }
+        }
+      }
+      .large,
+      .medium {
+        margin: 0 auto;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .cards {
+      .medium {
+        max-width: 40rem;
+        grid-template-columns: 1fr;
+      }
+    }
   }
 `;
