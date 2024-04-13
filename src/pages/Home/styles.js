@@ -189,7 +189,7 @@ export const Info = styled.div`
 
 export const Future = styled.div`
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   gap: 3.5rem;
   margin-bottom: 7rem;
   .acess {
@@ -219,7 +219,7 @@ export const Future = styled.div`
   .improve {
     display: flex;
     flex-direction: column;
-    gap: 5.7rem; 
+    gap: 5.7rem;
     .item {
       display: flex;
       align-items: center;
@@ -227,7 +227,7 @@ export const Future = styled.div`
       gap: 7.2rem;
       .title {
         max-width: 17.2rem;
-        width: 100%; 
+        width: 100%;
         .line {
           width: 3.8rem;
           height: 0.3rem;
@@ -252,20 +252,118 @@ export const Future = styled.div`
       }
     }
   }
-  @media (max-width:1024px){
+  @media (max-width: 1024px) {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 5rem;
-    .acess{
-      .explore{
+    .acess {
+      .explore {
         text-align: center;
       }
-    } 
-    .improve{
-      .item{
+    }
+    .improve {
+      .item {
         gap: 2rem;
       }
     }
+  }
+`;
+
+export const Feature = styled.div`
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-end;
+  margin-bottom: 15.5rem;
+  .right-area {
+    max-width: 48rem;
+    width: 100%;
+    h3 {
+      background: linear-gradient(90deg, #ae67fa 1.84%, #f49867 102.67%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 3.4rem;
+      font-weight: 800;
+      line-height: 4.5rem;
+      margin-bottom: 2.3rem;
+    }
+    p {
+      color: ${({ theme }) => theme.COLORS.TEXT_PARAGRAPH};
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 3rem;
+      margin-bottom: 3.1rem;
+    }
+    a {
+      color: ${({ theme }) => theme.COLORS.TEXT_LINK};
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 3rem;
+    }
+  }
+  .left-area {
+    max-width: 54.6rem;
+    width: 100%;
+  }
+  @media (max-width:1024px){
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-bottom: 8rem;
+    .left-area{
+      max-width: 45rem;
+    }
+  }
+`;
+
+export const Cta = styled.div`
+  border-radius: 10.724px;
+  border: 1px solid #000;
+  background: linear-gradient(90deg, #ae67fa 1.84%, #f49867 102.67%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  padding: 4.6rem 4.6rem 2.9rem;
+  margin-bottom: 18rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+  .register {
+    span {
+      color: #0e0e0e;
+      font-size: 1.2rem;
+      font-weight: 500;
+      line-height: 3rem;
+    }
+    p {
+      color: #000;
+      font-size: 2.4rem;
+      font-weight: 800;
+      line-height: 4.5rem;
+    }
+  }
+  .get {
+    max-width: 18.9rem;
+    width: 100%;
+    padding: 1.5rem 0;
+    border-radius: 4rem;
+    background: #000;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 3rem;
+    transition: all .3s;
+    &:hover {
+      background:#fff ;
+      color: #000;
+    }
+  }
+  @media (max-width:1024px){
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
   }
 `;

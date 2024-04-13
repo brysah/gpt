@@ -1,8 +1,9 @@
 import { Header } from "../../components/Header"
 import { Section } from '../../components/Section'
-import { Hero, Companies, Info, Future } from "./styles"
+import { Hero, Companies, Info, Future, Feature,Cta } from "./styles"
 import { Input } from "../../components/Input"
 import group_people from '../../assets/group-people.svg'
+import feature from '../../assets/feature-image.png'
 import { company, company2, company3, company4, company5 } from '../../utils/companies'
 import { Link } from 'react-router-dom'
 
@@ -120,6 +121,27 @@ export function Home() {
                         </div>
                     </div>
                 </Future>
+            </Section>
+            <Section>
+                <Feature>
+                    <div className="left-area">
+                        <img src={feature} alt="feature image" />
+                    </div>
+                    <div className="right-area">
+                        <h3>The possibilities are beyond your imagination</h3>
+                        <p>Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment. Party we years to order allow asked of.</p>
+                        <Link>Request Early Access to Get Started</Link>
+                    </div>
+                </Feature>
+            </Section>
+            <Section>
+                <Cta>
+                    <div className="register">
+                        <span>Request Early Access to Get Started</span>
+                        <p>Register today & start exploring the endless possiblities.</p>
+                    </div>
+                    <button className="get">Get Started</button>
+                </Cta>
             </Section>
         </>
     )
