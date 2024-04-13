@@ -170,8 +170,9 @@ export const Info = styled.div`
 
   @media (max-width: 1024px) {
     padding: 3rem;
+    margin-bottom: 10rem;
     .content {
-      .explore{
+      .explore {
         flex-wrap: wrap;
         align-items: center;
         gap: 2rem;
@@ -181,6 +182,89 @@ export const Info = styled.div`
         gap: 2rem;
         align-items: center;
         justify-content: center;
+      }
+    }
+  }
+`;
+
+export const Future = styled.div`
+  display: flex;
+  justify-content: space-between; 
+  gap: 3.5rem;
+  margin-bottom: 7rem;
+  .acess {
+    width: 100%;
+    max-width: 47.2rem;
+    .explore {
+      h4 {
+        background: linear-gradient(90deg, #ae67fa 1.84%, #f49867 102.67%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 3.4rem;
+        font-weight: 800;
+        line-height: 4.5rem;
+        max-width: 47.2rem;
+        width: 100%;
+        margin-bottom: 3.4rem;
+      }
+      a {
+        color: ${({ theme }) => theme.COLORS.TEXT_LINK};
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 3rem;
+      }
+    }
+  }
+  .improve {
+    display: flex;
+    flex-direction: column;
+    gap: 5.7rem; 
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 7.2rem;
+      .title {
+        max-width: 17.2rem;
+        width: 100%; 
+        .line {
+          width: 3.8rem;
+          height: 0.3rem;
+          background: linear-gradient(103deg, #ae67fa -13.86%, #f49867 99.55%),
+            #fff;
+        }
+        h3 {
+          color: #fff;
+          font-size: 1.8rem;
+          font-weight: 800;
+          line-height: 2.4rem;
+          letter-spacing: -0.072rem;
+        }
+      }
+      p {
+        color: ${({ theme }) => theme.COLORS.TEXT_PARAGRAPH};
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 2.4rem;
+        max-width: 33.4rem;
+        width: 100%;
+      }
+    }
+  }
+  @media (max-width:1024px){
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    .acess{
+      .explore{
+        text-align: center;
+      }
+    } 
+    .improve{
+      .item{
+        gap: 2rem;
       }
     }
   }

@@ -1,6 +1,6 @@
 import { Header } from "../../components/Header"
 import { Section } from '../../components/Section'
-import { Hero, Companies, Info } from "./styles"
+import { Hero, Companies, Info, Future } from "./styles"
 import { Input } from "../../components/Input"
 import group_people from '../../assets/group-people.svg'
 import { company, company2, company3, company4, company5 } from '../../utils/companies'
@@ -80,6 +80,46 @@ export function Home() {
                         </div>
                     </div>
                 </Info>
+            </Section>
+            <Section>
+                <Future>
+                    <div className="acess">
+                        <div className="explore">
+                            <h4>The Future is Now and You Just Need To Realize It. Step into Future Today & Make it Happen.</h4>
+                            <Link>Request Early Access to Get Started</Link>
+                        </div>
+                    </div>
+                    <div className="improve">
+                        <div className="item">
+                            <div className="title">
+                                <div className="line"></div>
+                                <h3>Improving end distrusts instantly </h3>
+                            </div>
+                            <p>From they fine john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.</p>
+                        </div>
+                        <div className="item">
+                            <div className="title">
+                                <div className="line"></div>
+                                <h3>Become the tended active</h3>
+                            </div>
+                            <p>Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.</p>
+                        </div>
+                        <div className="item">
+                            <div className="title">
+                                <div className="line"></div>
+                                <h3>Message or am nothing</h3>
+                            </div>
+                            <p>Led ask possible mistress relation elegance eat likewise debating. By message or am nothing amongst chiefly address.</p>
+                        </div>
+                        <div className="item">
+                            <div className="title">
+                                <div className="line"></div>
+                                <h3>Really boy law county</h3>
+                            </div>
+                            <p>Really boy law county she unable her sister. Feet you off its like like six. Among sex are leave law built now. In built table in an rapid blush.</p>
+                        </div>
+                    </div>
+                </Future>
             </Section>
         </>
     )
