@@ -473,3 +473,89 @@ export const Blog = styled.div`
     }
   }
 `;
+
+export const Footer = styled.footer`
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_FOOTER};
+  width: 100%;
+  padding-top: 15rem;
+  padding-bottom: 2.7rem;
+  h3 {
+    background: linear-gradient(90deg, #ae67fa 1.84%, #f49867 102.67%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 6.2rem;
+    font-weight: 800;
+    line-height: 7.5rem;
+    letter-spacing: -0.248rem;
+    margin-bottom: 6.4rem;
+    text-align: center;
+  }
+  .request {
+    margin: 0 auto;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 20rem;
+    padding: 2rem;
+    transition: all 0.3s;
+    display: block;
+    &:hover {
+      color: ${({ theme }) => theme.COLORS.BACKGROUND_FOOTER};
+      background-color: #fff;
+    }
+  }
+  .site-map {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 7rem;
+    .logo {
+      img {
+        max-width: 11.8rem;
+        width: 100%;
+        margin-bottom: 2.5rem;
+      }
+      p {
+        width: 16.8rem;
+        text-align: start;
+      }
+    }
+    strong {
+      color: #fff;
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-bottom: 3.6rem;
+      display: block;
+    }
+    a,
+    li {
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: 2.6rem;
+    }
+    p {
+      color: #fff;
+      font-size: 1.2rem;
+      line-height: normal;
+    }
+  }
+  p {
+    color: #fff;
+    font-feature-settings: "liga" off; 
+    font-size: 1.2rem; 
+    font-weight: 400; 
+    text-align: center;
+  }
+  @media(max-width:768px){
+    .site-map{
+      flex-wrap: wrap; 
+      gap: 5rem;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+`;

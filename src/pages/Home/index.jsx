@@ -1,9 +1,10 @@
 import { Header } from "../../components/Header"
 import { Section } from '../../components/Section'
-import { Hero, Companies, Info, Future, Feature, Cta, Blog } from "./styles"
+import { Hero, Companies, Info, Future, Feature, Cta, Blog, Footer } from "./styles"
 import { Input } from "../../components/Input"
 import group_people from '../../assets/group-people.svg'
 import feature from '../../assets/feature-image.png'
+import logo from '../../assets/logo.svg'
 import { company, company2, company3, company4, company5 } from '../../utils/companies'
 import { card, card2, card3, card4, card5 } from '../../utils/cards'
 
@@ -199,6 +200,58 @@ export function Home() {
                     </div>
                 </Blog>
             </Section>
+            <Footer>
+                <Section>
+                    <h3> Do you want to step in to the future before others </h3>
+                    <button className="request">  Request Early Access </button>
+                    <div className="site-map">
+                        <div className="logo">
+                            <img src={logo} alt="logo" />
+                            <p>Crechterwoord K12 182 DK Alknjkcb, All Rights Reserved</p>
+                        </div>
+                        <div className="links">
+                            <strong>Links</strong>
+                            <ul>
+                                <li>
+                                    <Link>Overons</Link>
+                                </li>
+                                <li>
+                                    <Link>Social Media</Link>
+                                </li>
+                                <li>
+                                    <Link>Counters</Link>
+                                </li>
+                                <li>
+                                    <Link>Contact</Link>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="company">
+                            <strong>Company</strong>
+                            <ul>
+                                <li>
+                                    <Link>Terms & Conditions</Link>
+                                </li>
+                                <li>
+                                    <Link>Privacy Policy</Link>
+                                </li>
+                                <li>
+                                    <Link>Contact</Link>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="get_in">
+                            <strong>Get in touch</strong>
+                            <ul>
+                                <li>Crechterwoord K12 182 DK Alknjkcb  </li>
+                                <li>085-132567 </li>
+                                <li>info@payme.net</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>© 2021 GPT-3. All rights reserved.</p>
+                </Section>
+            </Footer>
         </>
     )
 }
